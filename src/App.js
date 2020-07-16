@@ -7,7 +7,6 @@ function App() {
   const [numbers, setNumbers] = useState();
 
   useEffect(() => {
-    console.log("----->APP USEEFFECT<-----");
     setNumbers(initialNumbers);
   }, []);
 
