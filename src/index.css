@@ -13,8 +13,29 @@ body {
 }
 .header {
   text-align: center;
-  color: rgb(148, 3, 136);
+  font-size: larger;
+  color: rgb(255, 209, 84);
 }
+.win-fail {
+  margin-top: 70px;
+  top: 100%;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  color: whitesmoke;
+}
+.win-fail button {
+  background-color: rgb(255, 209, 84);
+  border-radius: 30px;
+
+  border: none;
+  font-size: large;
+  width: 150px;
+  height: 55px;
+}
+
 .board {
   z-index: 0;
   text-align: center;
@@ -34,13 +55,15 @@ body {
   align-items: center;
   background-color: rgb(231, 231, 231);
   color: rgb(231, 231, 231);
-  margin: 5px;
+  margin: 2px;
   font-size: x-large;
   border-radius: 10px;
   width: var(--rectSize);
   height: var(--rectSize);
   animation: 1s fade-out;
   animation-fill-mode: forwards;
+  border: 3px solid rgb(231, 231, 231);
+  border-radius: 10px;
 }
 @keyframes fade-out {
   0% {
@@ -51,16 +74,6 @@ body {
     opacity: 0;
   }
 }
-/* @keyframes fade-in {
-  0% {
-    color: whitesmoke;
-    background-color: whitesmoke;
-  }
-  100% {
-    color: whitesmoke;
-    background-color: rgb(53, 53, 255);
-  }
-} */
 
 .rectangle-playable {
   user-select: none;
@@ -95,9 +108,10 @@ body {
   opacity: 0;
   margin: 5px;
   border-radius: 10px;
-  transform: translateY(10px);
   width: var(--rectSize);
   height: var(--rectSize);
+  border: 3px solid rgb(125, 125, 226);
+  border-radius: 10px;
 }
 .rectangle-hide-text {
   user-select: none;
@@ -111,9 +125,11 @@ body {
   opacity: 1;
   margin: 5px;
   border-radius: 10px;
-  transform: translateY(10px);
+
   width: var(--rectSize);
   height: var(--rectSize);
+  border: 3px solid rgb(245, 245, 245);
+  border-radius: 10px;
 }
 .rectangle-playable.rectangle-hide-text {
   user-select: none;
@@ -126,7 +142,9 @@ body {
 
   margin: 5px;
   border-radius: 10px;
-  transform: translateY(10px);
   width: var(--rectSize);
   height: var(--rectSize);
+}
+.rectangle-playable.rectangle-hide-text:hover {
+  border-color: rgb(245, 245, 245);
 }
