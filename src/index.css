@@ -37,6 +37,7 @@ body {
 }
 
 .board {
+  margin-top: 40px;
   z-index: 0;
   text-align: center;
   display: inline-block;
@@ -48,6 +49,7 @@ body {
   --rectSize: 50px;
 }
 .rectangle {
+  opacity: 0; /* disables fade-out animation */
   user-select: none;
   cursor: default;
   display: inline-flex;
@@ -65,7 +67,7 @@ body {
   border: 3px solid rgb(231, 231, 231);
   border-radius: 10px;
 }
-@keyframes fade-out {
+/* @keyframes fade-out {
   0% {
     background-color: rgb(231, 231, 231);
   }
@@ -73,7 +75,7 @@ body {
     background-color: rgb(53, 53, 255);
     opacity: 0;
   }
-}
+} */
 
 .rectangle-playable {
   user-select: none;

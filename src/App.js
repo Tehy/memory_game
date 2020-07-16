@@ -22,7 +22,7 @@ function App() {
       <div className="app">
         <header className="header">
           <h1>The Chimp Test</h1>
-          <p>can you outsmart a chimp</p>
+          <p>can you outsmart a chimp in memory test</p>
         </header>
         {<Board numbers={numbers} nextRound={nextRound} />}
       </div>
