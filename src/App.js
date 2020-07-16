@@ -21,8 +21,8 @@ function App() {
     <>
       <div className="app">
         <header className="header">
-          <h1>The Chimp Test</h1>
-          <p>can you outsmart a chimp in memory test</p>
+          <h1>Memory Test</h1>
+          <p>test how far you memory last by clicking the squares in order</p>
         </header>
         {<Board numbers={numbers} nextRound={nextRound} />}
       </div>
