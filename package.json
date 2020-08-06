@@ -1,6 +1,6 @@
 {
   "homepage": "http://tehy.github.io/memory_game",
-  "name": "chimp_test",
+  "name": "pomodoro_timer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

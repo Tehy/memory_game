@@ -150,3 +150,14 @@ body {
 .rectangle-playable.rectangle-hide-text:hover {
   border-color: rgb(245, 245, 245);
 }
+@media screen and (max-width: 535px) {
+  :root {
+    --rectSize: 35px;
+  }
+  .rectangle-playable {
+    font-size: large;
+  }
+  .board {
+    margin-top: 0;
+  }
+}
